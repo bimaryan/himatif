@@ -1424,10 +1424,6 @@ section {
     border-radius: 8;
 }
 
-section {
-    height: 90vh;
-}
-
 .btn-success {
     background-color: orangered;
 }
