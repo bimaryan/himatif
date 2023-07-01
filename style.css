@@ -2,6 +2,10 @@
 # Header
 --------------------------------------------------------------*/
 
+*, body {
+    scroll-behavior: smooth;
+}
+
 #header {
     background: #fff;
     transition: all 0.5s;
@@ -52,22 +56,22 @@
 * Desktop Navigation 
 */
 
-.navbar ul {
+/* .navbar ul {
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
     align-items: center;
-}
+} */
 
-.navbar li {
+/* .navbar li {
     position: relative;
-}
+} */
 
-.navbar>ul>li {
+/* .navbar>ul>li {
     white-space: nowrap;
     padding: 10px 0 10px 28px;
-}
+} */
 
 .navbar a,
 .navbar a:focus {
@@ -75,10 +79,10 @@
     position: relative;
 }
 
-.navbar>ul>li>a:before {
+/* .navbar>ul>li>a:before {
     background-color: orangered;
     transition: all 0.3s ease-in-out 0s;
-}
+} */
 
 .navbar a:hover:before,
 .navbar li:hover>a:before,
@@ -99,7 +103,6 @@
     left: 28px;
     top: calc(100% + 30px);
     margin: 0;
-    padding: 10px 0;
     z-index: 99;
     opacity: 0;
     visibility: hidden;
@@ -124,7 +127,7 @@
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-    color: #198754;
+    color: orangered;
 }
 
 .navbar .dropdown:hover>ul {
@@ -280,8 +283,8 @@
 --------------------------------------------------------------*/
 #hero {
     width: 100%;
-    height: 95vh;
-    background: url("../img/hero.jpg");
+    height: 100vh;
+    background: url("/img/hero.jpeg");
     background-size: cover;
     position: relative;
     background-position: center;
@@ -311,7 +314,7 @@
 }
 
 #hero h1 span {
-    color: #198754;
+    color: orangered;
 }
 
 #hero h2 {
@@ -516,11 +519,11 @@ section {
 /*--------------------------------------------------------------
 # Teras
 --------------------------------------------------------------*/
-.teras {
+.BPH {
     padding-bottom: 30px;
 }
 
-.teras .pengurus {
+.BPH .pengurus {
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 4px;
@@ -528,18 +531,18 @@ section {
     box-shadow: 0px 2px 15px rgba(16, 110, 234, 0.15);
 }
 
-.teras .pengurus .pengurus-info {
+.BPH .pengurus .pengurus-info {
     padding: 25px 15px;
 }
 
-.teras .pengurus .pengurus-info h4 {
+.BPH .pengurus .pengurus-info h4 {
     font-weight: 700;
     margin-bottom: 5px;
     font-size: 18px;
     color: #222222;
 }
 
-.teras .pengurus .pengurus-info p {
+.BPH .pengurus .pengurus-info p {
     font-style: italic;
     font-size: 14px;
     line-height: 26px;
@@ -1424,10 +1427,20 @@ section {
     border-radius: 8;
 }
 
-.btn-success {
+.btn {
     background-color: orangered;
+    color: white;
 }
 
-.btn-success:hover, .btn-success:focus {
+.btn:hover, .btn:focus, .btn::before, .btn::after, .btn:active {
     background-color: orangered;
+    color: white;
+}
+
+#home {
+    height: 90vh;
+}
+
+.nama-himatif {
+    color: orangered;
 }
